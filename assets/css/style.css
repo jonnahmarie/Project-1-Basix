@@ -1,5 +1,5 @@
 body {
-    background-image: url(./assets/Images/C19WP.jpg);
+    background-image: url(../Images/C19WP.jpg);
 }
 
 .center {
@@ -10,7 +10,7 @@ body {
   }
 
 .navBar {
-    background-image: url(./assets/Images/COVIDBanner.png);
+    background-image: url(../Images/COVIDBanner.png);
     border-radius: 25px;
 }
 
