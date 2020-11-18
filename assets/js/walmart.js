@@ -38,7 +38,7 @@ $.ajax({
       if (availability) {
         console.log(productInfo)
         var cell = $('<div class="cell" data-category="hand-sanitizer"></div>')
-        cell.appendTo('#product-container')
+        $('#product-container').append(cell)
 
         var img = $('<img class="thumbnail product-thumbnail"/>') //Equivalent: $(document.createElement('img'))
         img.attr('src', productImg)
