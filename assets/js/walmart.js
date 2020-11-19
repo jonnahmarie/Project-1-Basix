@@ -29,12 +29,17 @@ $.ajax({
       method: 'GET',
     }).then(function (productResponse) {
       //..and pushes the product info into the DOM
+      //Availability
       var availability = productResponse.data.inStore.inventory.available
+      //Image
       var productImg = productResponse.data.common.productImageUrl
+      //Title
       var productTitle = productResponse.data.common.name
+      //Price
       var productPrice =
         '$' + productResponse.data.inStore.price.priceInCents / 100
       var productURL = productResponse.data.common.productUrl
+      //Only displays products that are in-stock
       if (availability) {
         var cell = $('<div class="cell" data-attribute="ps5-controller"></div>')
         $('#product-container').append(cell)
