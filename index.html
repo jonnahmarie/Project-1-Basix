@@ -1,9 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"
+      rel="stylesheet"
+      type="text/css"/>
+
+    <!--CSS Local Path-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Script Local Path-->
+    <script src="./assets/js/script.js"></script>
+
   </head>
-  <body></body>
+
+  <body>
+
+
+    <header>
+
+      <!--WebApp Title-->
+      <div class="title-bar">
+            <ul>
+              <li><a href="#"></a>COVID</a></li>
+            </ul>
+      </div>
+      <br>
+
+      <!--Logo-->
+      <div class="center">
+          <img src="./assets/Images/Logo.png" alt="logo" width="300;" height="300;">
+      </div>
+      <br>
+
+    </header>
+
+    <!--Container for Entire form-->
+    <div class="input-container">
+     <br>
+        <!--user input-->
+        <div class="user-input">
+
+          <!--Zip Code Input-->
+          <label>
+            <input class="center" Id="zip-input" type="text" placeholder="Zipe Code">
+          </label>
+          <br>
+          <!--Radius Dropdown-->
+          <label class="center" Id="radius-title">Radius
+            <select>
+              <option value="Less than 5 miles">Less than 5 miles</option>
+              <option value="5-10 miles">5-10 miles</option>
+              <option value="10-20 miles">10-20 miles</option>
+              <option value="More than 20 miles">More than 20 miles</option>
+            </select>
+          </label>
+
+      </div>
+      <br>
+
+      <div class="search-button-box">
+      <!--Search Button-->
+      <button Id="search-button" type="button" class="alert button center">SEARCH</button>
+      </div>
+
+    </div>
+
+    <!--Button filters for products-->
+    <div class="stacked-for-small button-group">
+        <a class="button" data-filter="Toilet Paper">Toilet Paper</a>
+        <a class="button" data-filter="Masks">Masks</a>
+        <a class="button" data-filter="Toothpaste">Toothpaste</a>
+        <a class="button" data-filter="Hand Sanitizer">Hand Sanitizer</a>
+        <a class="button" data-filter="Soap">Soap</a>
+        <a class="button" data-filter="Gloves">Gloves</a>
+        <a class="button" data-filter="Cleaning Products">Cleaning Products</a>
+        <a class="button" data-filter="Baby Products">Baby Products</a>
+        <a class="button" data-filter="Face Shields">Face Shields</a>
+    </div>
+
+    <!--Script Tags-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+    <script>
+      $(document).foundation()
+    </script>
+
+
+  </body>
+
+
 </html>
