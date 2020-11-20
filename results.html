@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
+
     <title>Basix</title>
-=======
+
     <title>COVID Essentials</title>
-    <link rel="stylesheet" href="style.css">
->>>>>>> main
+
+    <link rel="stylesheet" href="./assets/css/results.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
@@ -52,7 +55,7 @@
     </a> -->
 
     <!-- Start Top Bar -->
-    <div class="top-bar-left">
+    <div class="top-bar-section">
         <ul class="menu">
           <li>
             <form method="GET" action="">
@@ -73,11 +76,56 @@
             </form>
           </li>
         </ul>
-    </div>
+      </div>
     <!-- End Top Bar -->
 
+    <!-- Start filters and facets -->
+     <h1 class="product-filters-header hide-for-small-only">Products</h1>
+     <ul class="vertical menu hide-for-small-only" data-accordion-menu>
+        <li class="product-filters-tab">
+          <a href="#">Products</a>
+          <ul class="categories-menu menu vertical nested is-active">
+             <a href="#" class="clear-all" id="category-clear-all">Clear All</a> 
+             <li><input id="toilet-paper" type="checkbox"><label for="category-checkbox1">Toilet Paper</label></li>
+             <li><input id="masks" type="checkbox"><label for="category-checkbox2">Masks</label></li>
+             <li><input id="toothpaste" type="checkbox"><label for="category-checkbox3">Toothpaste</label></li>
+             <li><input id="sanitizer" type="checkbox"><label for="category-checkbox4">Hand Sanitizer</label></li>
+             <li><input id="soap" type="checkbox"><label for="category-checkbox5">Soap</label></li>
+             <li><input id="gloves" type="checkbox"><label for="category-checkbox6">Gloves</label></li>
+             <li><input id="cleaning" type="checkbox"><label for="category-checkbox7">Cleaning Products</label></li>
+             <li><input id="baby" type="checkbox"><label for="category-checkbox8">Baby Product</label></li>
+             <li><input id="shields" type="checkbox"><label for="category-checkbox9">Face Shields</label></li>
+          </ul>
+       </li>
+       <li class="product-filters-tab"> 
+          <a href="#">Price</a>
+          <ul class="categories-menu menu vertical nested">
+            <a href="#" class="clear-all" id="price-clear-all">Clear All</a> 
+            <li><input id="price-checkbox1" type="checkbox"><label for="price-checkbox1">Under $25</label></li>
+            <li><input id="price-checkbox2" type="checkbox"><label for="price-checkbox2">$25–$50</label></li>
+            <li><input id="price-checkbox3" type="checkbox"><label for="price-checkbox3">$50–$100</label></li>
+          </ul>
+        </li>
+      </ul>  
+    </div>
+    
+    <!-- <div class="stacked-for-small button-group">
+      <a class="button" data-filter="Toilet Paper">Toilet Paper</a>
+      <a class="button" data-filter="Masks">Masks</a>
+      <a class="button" data-filter="Toothpaste">Toothpaste</a>
+      <a class="button" data-filter="Hand Sanitizer">Hand Sanitizer</a>
+      <a class="button" data-filter="Soap">Soap</a>
+      <a class="button" data-filter="Gloves">Gloves</a>
+      <a class="button" data-filter="Cleaning Products">Cleaning Products</a>
+      <a class="button" data-filter="Baby Products">Baby Products</a>
+      <a class="button" data-filter="Face Shields">Face Shields</a>
+    </div> -->
+
+    <!-- End filters and facets -->
+
+
     <div class="text-center">
-      <h2>Our Newest Products</h2>
+      <h2>Products near you!</h2>
       <hr />
     </div>
 
@@ -97,24 +145,7 @@
 
     <br />
 
-    <nav aria-label="Pagination">
-      <ul class="pagination text-center">
-        <li class="pagination-previous disabled">Previous</li>
-        <li class="current">
-          <span class="show-for-sr">You're on page</span> 1
-        </li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li class="ellipsis"></li>
-        <li><a href="#" aria-label="Page 12">9</a></li>
-        <li><a href="#" aria-label="Page 13">10</a></li>
-        <li class="pagination-next">
-          <a href="#" aria-label="Next page">Next</a>
-        </li>
-      </ul>
-    </nav>
-
+    
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="./assets/js/walmart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
@@ -122,7 +153,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
       $(document).foundation()
-<<<<<<< HEAD
+
+      //More (Expand) or Less (Collapse)
+      $('.categories-menu.menu.nested').each(function(){
+        var filterAmount = $(this).find('li').length;
+        if( filterAmount > 5){    
+        $('li', this).eq(4).nextAll().hide().addClass('toggleable');
+        $(this).append('<li class="more">More</li>');    
+      }  
+    });
+
+      $('.categories-menu.menu.nested').on('click','.more', function(){
+        if( $(this).hasClass('less') ){    
+        $(this).text('More').removeClass('less');    
+        }else{
+        $(this).text('Less').addClass('less'); 
+      }
+      $(this).siblings('li.toggleable').slideToggle(); 
+    }); 
+
+
+
+
       var requestOptions = {
       method: 'GET',
       redirect: 'follow'
@@ -134,13 +186,11 @@
       .catch(error => console.log('error', error));
 
 
-=======
     //   $(document).ready(function(){
     //     $("#search").click(function(){
     //     $("#miles").append('<option value="' + $("#zip-code").val() + '">' + $("#search").val() + '</option>');
     //     });
     //     });
->>>>>>> f3642d7e9ab5ff1cffc923aa12bb1f7929456392
     </script>
   </body>
 </html>

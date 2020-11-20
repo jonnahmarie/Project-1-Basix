@@ -1,12 +1,7 @@
-<<<<<<< HEAD
+
 img.store-logo {
   margin-bottom: 1em;
 }
-=======
-body {
-  background-color: cyan;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -41,12 +36,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-
+} 
 
 
 /*FORM AND USER INPUTS*/
+
 .input-container{
   margin: 50px;
   padding: 50px 100px 50px 100px;
@@ -55,8 +49,6 @@ li a {
 .user-input {
   padding: 50px;
 }
-
-
 
 .search-button-box{
   border-radius: 25px;
@@ -77,4 +69,3 @@ li a {
   width: 400px;
 }
 
->>>>>>> main
