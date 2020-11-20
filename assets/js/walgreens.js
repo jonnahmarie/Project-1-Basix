@@ -1,6 +1,6 @@
 // store locator API
 var zipCode = "91344";
-var userRadius = "20";
+var userRadius = "10";
 
 // var storeReturn = function () {
 //     // var radiusInput = $("option :selected").text();
@@ -32,7 +32,7 @@ var settings = {
       affId: 'storesapi',
       zip: zipCode,
       r: userRadius,
-      s: 20,
+      s: 60,
       requestType: 'locator',
     }),
   };
@@ -49,7 +49,7 @@ var settings = {
         var storeId = results[i].storeNumber;
         // console.log(responseRadius);
 
-        if (responseRadius < userRadius) {
+        if (responseRadius <= userRadius) {
             storeArray.push(storeId);
         }
 
@@ -67,10 +67,11 @@ var settings = {
               apiKey: '2KkNRGLlzhp6kiPoz1iV2kPWr59a4NfA',
               affId: 'storesapi',
               store: storeArray[i],
-              planograms: ['05400010060'],
+              planograms: ['07385202388'],
             }),
           }
           $.ajax(settings).done(function (response) {
+            var availability = response.status;
             console.log(response)
           });
     };
