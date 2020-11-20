@@ -6,6 +6,7 @@
     > Technologies
     > API References
     > Installation
+    > Screenshots
     > Contributors
 
 ### Description
@@ -26,12 +27,13 @@ It is a possibility that you may need to use CORS or Cross Origin Resource Shari
 
 
 ### API References
-<img src=“assets/walgreens-api-ref.png”
-raw=true
-alt=“Walgreens API Reference”/>
+<img src=“assets/Images/walgreens-api-ref.png” raw=true alt=“Walgreens API Reference”/>
 
 ### Installation
 How to use: first you will land on the Basix's homepage - where you will enter your zipcode and select your radius that will determine how far you wish to travel.  Once the previously mentioned fields have been entered you then select the submit button.  The submit button in turn prompts the user to the results page.  All product results from stores within the users radius will display on the results page then the user will have the option to select a specific category in order to filter product results.  The filters are used to activate/deactivate certain categories.  If a filter is utilized the results page will then return the product results based on the filter selection.
+
+### Screenshots
+<img src="assets/Images/homepage.png" raw=true alt="Homepage"/>
 
 
 ### Contributors
