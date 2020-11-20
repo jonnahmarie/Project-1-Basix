@@ -1,6 +1,6 @@
 body {
   background-color: cyan;
-  background-image: url(../Images/C19WP.jpg);
+  background-image: url(../Ima ges/C19WP.jpg);
 }
 
 .center {
@@ -37,12 +37,11 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-
+} 
 
 
 /*FORM AND USER INPUTS*/
+
 .input-container{
   border: rgb(0, 0, 0) solid 5px;
   margin: 50px;
@@ -53,8 +52,6 @@ li a {
   border: rgb(0, 0, 0) solid 5px;
   padding: 50px;
 }
-
-
 
 .search-button-box{
   border: rgb(0, 0, 0) solid 5px;

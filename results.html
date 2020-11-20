@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COVID Essentials</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/results.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
@@ -47,7 +47,7 @@
     </a> -->
 
     <!-- Start Top Bar -->
-    <div class="top-bar-left">
+    <div class="top-bar-section">
         <ul class="menu">
           <li>
             <form method="GET" action="">
@@ -68,11 +68,104 @@
             </form>
           </li>
         </ul>
-    </div>
+      </div>
     <!-- End Top Bar -->
 
+    <!-- Start filters and facets -->
+    <div class="product-filters">
+      <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
+       <li>
+         <a href="#"><h2>Products</h2></a>   
+         <ul class="vertical menu" data-accordion-menu>
+          <li class="product-filters-tab">
+            <a href="#">Category</a>
+            <ul class="categories-menu menu vertical nested is-active">
+               <a href="#" class="clear-all" id="category-clear-all">Clear All</a> 
+               <li><input class="category-clear-selection" id="category-checkbox1" type="checkbox"><label for="category-checkbox1">Category 1</label></li>
+               <li><input class="product-name" id="category-checkbox2" type="checkbox"><label for="category-checkbox2">Category 2</label></li>
+               <li><input class="product-name" id="category-checkbox3" type="checkbox"><label for="category-checkbox3">Category 3</label></li>
+               <li><input class="porduct-name" id="category-checkbox4" type="checkbox"><label for="category-checkbox4">Category 4</label></li>
+               <li><input class="porduct-name" id="category-checkbox5" type="checkbox"><label for="category-checkbox5">Category 5</label></li>
+               <li><input class="porduct-name" id="category-checkbox6" type="checkbox"><label for="category-checkbox6">Category 6</label></li>
+               <li><input class="porduct-name" id="category-checkbox7" type="checkbox"><label for="category-checkbox7">Category 7</label></li>
+               <li><input class="porduct-name" id="category-checkbox8" type="checkbox"><label for="category-checkbox8">Category 8</label></li>
+               <li><input class="porduct-name" id="category-checkbox9" type="checkbox"><label for="category-checkbox9">Category 9</label></li>
+               <li><input class="porduct-name" id="category-checkbox10" type="checkbox"><label for="category-checkbox10">Category 10</label></li>
+               <li><input class="porduct-name" id="category-checkbox11" type="checkbox"><label for="category-checkbox11">Category 11</label></li>
+               <li><input class="porduct-name" id="category-checkbox12" type="checkbox"><label for="category-checkbox12">Category 12</label></li>
+               <li><input class="porduct-name" id="category-checkbox13" type="checkbox"><label for="category-checkbox13">Category 13</label></li>
+               <li><input class="porduct-name" id="category-checkbox14" type="checkbox"><label for="category-checkbox14">Category 14</label></li>
+               <li><input class="porduct-name" id="category-checkbox15" type="checkbox"><label for="category-checkbox15">Category 15</label></li>
+             </ul>
+         </li>
+          </li>
+         <li class="product-filters-tab"> 
+            <a href="#">Price</a>
+            <ul class="categories-menu menu vertical nested">
+              <a href="#" class="clear-all" id="price-clear-all">Clear All</a> 
+              <li><input id="price-checkbox1" type="checkbox"><label for="price-checkbox1">Under $25</label></li>
+              <li><input id="price-checkbox2" type="checkbox"><label for="price-checkbox2">$25–$50</label></li>
+              <li><input id="price-checkbox3" type="checkbox"><label for="price-checkbox3">$50–$250</label></li>
+              <li><input id="price-checkbox4" type="checkbox"><label for="price-checkbox4">$250–$600</label></li>
+              <li><input id="price-checkbox4" type="checkbox"><label for="price-checkbox4">$600–$1,000</label></li>
+            </ul>
+          </li>
+         </ul>
+       </li>
+     </ul>
+     
+     <h1 class="product-filters-header hide-for-small-only">Products</h1>
+     <ul class="vertical menu hide-for-small-only" data-accordion-menu>
+        <li class="product-filters-tab">
+          <a href="#">Category</a>
+          <ul class="categories-menu menu vertical nested is-active">
+             <a href="#" class="clear-all" id="category-clear-all">Clear All</a> 
+             <li><input id="category-checkbox1" type="checkbox"><label for="category-checkbox1">Category 1</label></li>
+             <li><input id="category-checkbox2" type="checkbox"><label for="category-checkbox2">Category 2</label></li>
+             <li><input id="category-checkbox3" type="checkbox"><label for="category-checkbox3">Category 3</label></li>
+             <li><input id="category-checkbox4" type="checkbox"><label for="category-checkbox4">Category 4</label></li>
+             <li><input id="category-checkbox5" type="checkbox"><label for="category-checkbox5">Category 5</label></li>
+             <li><input id="category-checkbox6" type="checkbox"><label for="category-checkbox6">Category 6</label></li>
+             <li><input id="category-checkbox7" type="checkbox"><label for="category-checkbox7">Category 7</label></li>
+             <li><input id="category-checkbox8" type="checkbox"><label for="category-checkbox8">Category 8</label></li>
+             <li><input id="category-checkbox9" type="checkbox"><label for="category-checkbox9">Category 9</label></li>
+             <li><input id="category-checkbox10" type="checkbox"><label for="category-checkbox10">Category 10</label></li>
+             <li><input id="category-checkbox11" type="checkbox"><label for="category-checkbox11">Category 11</label></li>
+             <li><input id="category-checkbox12" type="checkbox"><label for="category-checkbox12">Category 12</label></li>
+             <li><input id="category-checkbox13" type="checkbox"><label for="category-checkbox13">Category 13</label></li>
+             <li><input id="category-checkbox14" type="checkbox"><label for="category-checkbox14">Category 14</label></li>
+             <li><input id="category-checkbox15" type="checkbox"><label for="category-checkbox15">Category 15</label></li>
+          </ul>
+       </li>
+       <li class="product-filters-tab"> 
+          <a href="#">Price</a>
+          <ul class="categories-menu menu vertical nested">
+            <a href="#" class="clear-all" id="price-clear-all">Clear All</a> 
+            <li><input id="price-checkbox1" type="checkbox"><label for="price-checkbox1">Under $25</label></li>
+            <li><input id="price-checkbox2" type="checkbox"><label for="price-checkbox2">$25–$50</label></li>
+            <li><input id="price-checkbox3" type="checkbox"><label for="price-checkbox3">$50–$100</label></li>
+          </ul>
+        </li>
+      </ul>  
+    </div>
+    
+    <!-- <div class="stacked-for-small button-group">
+      <a class="button" data-filter="Toilet Paper">Toilet Paper</a>
+      <a class="button" data-filter="Masks">Masks</a>
+      <a class="button" data-filter="Toothpaste">Toothpaste</a>
+      <a class="button" data-filter="Hand Sanitizer">Hand Sanitizer</a>
+      <a class="button" data-filter="Soap">Soap</a>
+      <a class="button" data-filter="Gloves">Gloves</a>
+      <a class="button" data-filter="Cleaning Products">Cleaning Products</a>
+      <a class="button" data-filter="Baby Products">Baby Products</a>
+      <a class="button" data-filter="Face Shields">Face Shields</a>
+    </div> -->
+
+    <!-- End filters and facets -->
+
+
     <div class="text-center">
-      <h2>Our Newest Products</h2>
+      <h2>Products near you!</h2>
       <hr />
     </div>
 
@@ -92,30 +185,32 @@
 
     <br />
 
-    <nav aria-label="Pagination">
-      <ul class="pagination text-center">
-        <li class="pagination-previous disabled">Previous</li>
-        <li class="current">
-          <span class="show-for-sr">You're on page</span> 1
-        </li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li class="ellipsis"></li>
-        <li><a href="#" aria-label="Page 12">9</a></li>
-        <li><a href="#" aria-label="Page 13">10</a></li>
-        <li class="pagination-next">
-          <a href="#" aria-label="Next page">Next</a>
-        </li>
-      </ul>
-    </nav>
-
+    
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
       $(document).foundation()
+      //More (Expand) or Less (Collapse)
+      $('.categories-menu.menu.nested').each(function(){
+        var filterAmount = $(this).find('li').length;
+        if( filterAmount > 5){    
+        $('li', this).eq(4).nextAll().hide().addClass('toggleable');
+        $(this).append('<li class="more">More</li>');    
+      }  
+    });
+
+      $('.categories-menu.menu.nested').on('click','.more', function(){
+        if( $(this).hasClass('less') ){    
+        $(this).text('More').removeClass('less');    
+        }else{
+        $(this).text('Less').addClass('less'); 
+      }
+      $(this).siblings('li.toggleable').slideToggle(); 
+    }); 
+
+
     //   $(document).ready(function(){
     //     $("#search").click(function(){
     //     $("#miles").append('<option value="' + $("#zip-code").val() + '">' + $("#search").val() + '</option>');
