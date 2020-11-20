@@ -56,6 +56,9 @@
 
     </header>
 
+
+
+
     <!--Container for Entire form-->
     <div class="input-container">
      <br>
@@ -63,42 +66,36 @@
         <div class="user-input">
 
           <!--Zip Code Input-->
-          <label>
-            <input class="center" Id="zip-input" type="text" placeholder="Zipe Code">
-          </label>
-          <br>
-          <!--Radius Dropdown-->
-          <label class="center" Id="radius-title">Radius
-            <select>
-              <option value="Less than 5 miles">Less than 5 miles</option>
-              <option value="5-10 miles">5-10 miles</option>
-              <option value="10-20 miles">10-20 miles</option>
-              <option value="More than 20 miles">More than 20 miles</option>
-            </select>
-          </label>
+          <div class="top-bar-left center">
+            <ul class="menu">
+              <li>
+                <form method="GET" action="">
+                  <div class="input-group">
+                    <input class="input-group-field" type="text" name="search" placeholder="Search by item name">
+                    <label>
+                        <select>
+                          <option value="1">1 mile</option>
+                          <option value="5">5 miles</option>
+                          <option value="10">10 miles</option>
+                          <option value="15">15 miles</option>
+                        </select>
+                      </label>
+                    <div class="input-group-button">
+                    <input type="submit" class="button" value="Submit">
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+        </div>
 
-      </div>
+        </div>
       <br>
 
-      <div class="search-button-box">
-      <!--Search Button-->
-      <button Id="search-button" type="button" class="alert button center">SEARCH</button>
-      </div>
 
     </div>
 
-    <!--Button filters for products-->
-    <div class="stacked-for-small button-group">
-        <a class="button" data-filter="Toilet Paper">Toilet Paper</a>
-        <a class="button" data-filter="Masks">Masks</a>
-        <a class="button" data-filter="Toothpaste">Toothpaste</a>
-        <a class="button" data-filter="Hand Sanitizer">Hand Sanitizer</a>
-        <a class="button" data-filter="Soap">Soap</a>
-        <a class="button" data-filter="Gloves">Gloves</a>
-        <a class="button" data-filter="Cleaning Products">Cleaning Products</a>
-        <a class="button" data-filter="Baby Products">Baby Products</a>
-        <a class="button" data-filter="Face Shields">Face Shields</a>
-    </div>
+
 
     <!--Script Tags-->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

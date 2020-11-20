@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+img.store-logo {
+  margin-bottom: 1em;
+}
+=======
 body {
   background-color: cyan;
-  background-image: url(../Images/C19WP.jpg);
 }
 
 .center {
@@ -18,7 +22,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0px 200px 0px 0px;
+  padding: 0px 0px 0px 800px;
   overflow: hidden;
 }
 
@@ -44,20 +48,17 @@ li a {
 
 /*FORM AND USER INPUTS*/
 .input-container{
-  border: rgb(0, 0, 0) solid 5px;
   margin: 50px;
   padding: 50px 100px 50px 100px;
 }
 
 .user-input {
-  border: rgb(0, 0, 0) solid 5px;
   padding: 50px;
 }
 
 
 
 .search-button-box{
-  border: rgb(0, 0, 0) solid 5px;
   border-radius: 25px;
   padding: 0px 100px 0px 100px;
 }
@@ -76,3 +77,4 @@ li a {
   width: 400px;
 }
 
+>>>>>>> main
