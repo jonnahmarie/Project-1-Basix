@@ -1,0 +1,78 @@
+body {
+  background-color: cyan;
+  background-image: url(../Images/C19WP.jpg);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.title-bar {
+  background-image: url(../Images/COVIDBanner.png);
+  border-radius: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 200px 0px 0px;
+  overflow: hidden;
+}
+
+li {
+  text-align: center;
+  display: block;
+  padding: 2px;
+  color: white;
+  font-size: 50px;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+/*FORM AND USER INPUTS*/
+.input-container{
+  border: rgb(0, 0, 0) solid 5px;
+  margin: 50px;
+  padding: 50px 100px 50px 100px;
+}
+
+.user-input {
+  border: rgb(0, 0, 0) solid 5px;
+  padding: 50px;
+}
+
+
+
+.search-button-box{
+  border: rgb(0, 0, 0) solid 5px;
+  border-radius: 25px;
+  padding: 0px 100px 0px 100px;
+}
+
+#search-button{
+  border-radius: 25px;
+  width: 200px;
+}
+
+#zip-input {
+  width: 400px;
+
+}
+
+#radius-title {
+  width: 400px;
+}
+

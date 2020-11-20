@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>COVID Essentials</title>
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
@@ -46,38 +47,27 @@
     </a> -->
 
     <!-- Start Top Bar -->
-    <div
-      class="title-bar"
-      data-responsive-toggle="mainNavigation"
-      data-hide-for="medium"
-    >
-      <div class="title-bar-left">
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="mainNavigation"
-        ></button>
-        <div class="title-bar-title">Menu</div>
-      </div>
-      <div class="title-bar-right">Marketing Site</div>
-    </div>
-
-    <div class="top-bar" id="mainNavigation">
-      <div class="top-bar-left">
-        <ul class="menu vertical medium-horizontal">
-          <li class="menu-text hide-for-small-only">Marketing Site</li>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
+    <div class="top-bar-left">
+        <ul class="menu">
+          <li>
+            <form method="GET" action="">
+              <div class="input-group">
+                <input class="input-group-field" type="text" name="search" placeholder="Search by item name">
+                <label>
+                    <select>
+                      <option value="1">1 mile</option>
+                      <option value="5">5 miles</option>
+                      <option value="10">10 miles</option>
+                      <option value="15">15 miles</option>
+                    </select>
+                  </label>
+                <div class="input-group-button">
+                <input type="submit" class="button" value="Submit">
+                </div>
+              </div>
+            </form>
+          </li>
         </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu vertical medium-horizontal">
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-          <li><a href="#">Five</a></li>
-          <li><a href="#">Six</a></li>
-        </ul>
-      </div>
     </div>
     <!-- End Top Bar -->
 
@@ -112,8 +102,8 @@
         <li><a href="#" aria-label="Page 3">3</a></li>
         <li><a href="#" aria-label="Page 4">4</a></li>
         <li class="ellipsis"></li>
-        <li><a href="#" aria-label="Page 12">12</a></li>
-        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li><a href="#" aria-label="Page 12">9</a></li>
+        <li><a href="#" aria-label="Page 13">10</a></li>
         <li class="pagination-next">
           <a href="#" aria-label="Next page">Next</a>
         </li>
@@ -123,8 +113,10 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
       $(document).foundation()
+<<<<<<< HEAD
       var requestOptions = {
       method: 'GET',
       redirect: 'follow'
@@ -136,6 +128,13 @@
       .catch(error => console.log('error', error));
 
 
+=======
+    //   $(document).ready(function(){
+    //     $("#search").click(function(){
+    //     $("#miles").append('<option value="' + $("#zip-code").val() + '">' + $("#search").val() + '</option>');
+    //     });
+    //     });
+>>>>>>> f3642d7e9ab5ff1cffc923aa12bb1f7929456392
     </script>
   </body>
 </html>
