@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<<<<<<< HEAD
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-=======
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BASIX</title>
     
     
     <link
@@ -30,8 +23,6 @@
 
     <!--CSS Local Path-->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!--Script Local Path-->
-    <script src="./assets/js/script.js"></script>
 
   </head>
 
@@ -56,46 +47,29 @@
 
     </header>
 
-
-
-
-    <!--Container for Entire form-->
     <div class="input-container">
-     <br>
-        <!--user input-->
-        <div class="user-input">
-
-          <!--Zip Code Input-->
-          <div class="top-bar-left center">
-            <ul class="menu">
-              <li>
-                <form method="GET" action="">
-                  <div class="input-group">
-                    <input class="input-group-field" type="text" name="search" placeholder="Search by item name">
-                    <label>
-                        <select>
-                          <option value="1">1 mile</option>
-                          <option value="5">5 miles</option>
-                          <option value="10">10 miles</option>
-                          <option value="15">15 miles</option>
-                        </select>
-                      </label>
-                    <div class="input-group-button">
-                    <input type="submit" class="button" value="Submit">
-                    </div>
-                  </div>
-                </form>
-              </li>
-            </ul>
+      <form class ="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="medium-6 cell">
+            <input type="text" placeholder="Search by item name" id="item-name">
+          </div>
+          <div class="medium-2 cell">
+            <input type="number" placeholder="Zip Code" id="user-zip">
+          </div>
+          <div class="medium-2 cell">
+            <select>
+              <option value="1" name="distance">1 mile</option>
+              <option value="5" name="distance">5 miles</option>
+              <option value="10" name="distance">10 miles</option>
+              <option value="15" name="distance">15 miles</option>
+            </select>
+          </div>
+          <div class="medium-2 cell">
+            <a href="results.html" type="button" id="submit" class="button">Submit</a>
+          </div>
         </div>
-
-        </div>
-      <br>
-
-
+      </form>
     </div>
-
-
 
     <!--Script Tags-->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -104,10 +78,11 @@
     <script>
       $(document).foundation()
     </script>
+    <!--Script Local Path-->
+    <script src="./assets/js/script.js"></script>
 
 
   </body>
 
 
->>>>>>> f3642d7e9ab5ff1cffc923aa12bb1f7929456392
 </html>

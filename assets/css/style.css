@@ -50,6 +50,10 @@ li a {
   padding: 50px;
 }
 
+.input-group-field {
+  width: 300px;
+}
+
 .search-button-box{
   border-radius: 25px;
   padding: 0px 100px 0px 100px;
